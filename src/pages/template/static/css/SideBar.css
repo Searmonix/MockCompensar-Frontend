@@ -1,0 +1,51 @@
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F09609;
+    top: auto;
+    left: 0px;
+}
+
+.sidebar ul {
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    right: 0%;
+    padding-left: 30%;
+    gap: 10px;
+}
+
+.sidebar ul li {
+    width: 100%;
+    list-style: none;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.sidebar ul li a:hover {
+    background-color: #FBFBFB;
+    color:#F09609;
+    border-radius: 10px 0 0 10px;
+}
+
+/* 
+ * Necesita algunos arreglos para cambiar de estado
+ * Error: Too many re-renders
+*/
+.sidebar ul li a.active {
+
+    background-color:#FBFBFB;
+    color:#F09609;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.sidebar ul li a {
+    display: inline-block;
+    padding: 5% 0 5% 30%;
+    text-decoration: none;
+}

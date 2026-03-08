@@ -1,0 +1,43 @@
+.user-search-title {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.user-search-bar {
+    position: relative;
+    width: 400px;
+    margin: 10% auto;
+}
+
+.user-search-bar input {
+    border: solid black;
+    border-radius: 4px;
+}
+
+.user-search-bar button {
+    width: 100%;
+    display: block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    margin: 5% 0 0 0;
+    outline: none;
+    background-color: #F09609;
+    color: #FBFBFB;
+}
+
+.user-info {
+    margin-left: 40%;
+}
+
+.user-info h2 {
+    padding-left: 12%;
+    padding-bottom: 5%;
+}
+
+.user-search-error {
+    color: red;
+    width: 50%;
+    margin: 5% auto;
+    text-align: center;
+}

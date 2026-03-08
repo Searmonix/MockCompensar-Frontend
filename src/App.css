@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background-color: #FBFBFB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar .navbar-logo img {
+  max-width: 30%;
+  height: auto;
+  margin-left: 0;
+  padding: 0;
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-links{
+    position: relative;
+    display: flex;
+    list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: auto;
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
 }
+
+.navbar ul li ul li {
+    /* No reacciona muy bien la interfaz, pero funciona*/
+    display: none;
+}
+
+.navbar ul li:hover ul li {
+    display: block;
+}
+
+.login-btn {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #F09609;
+    color: #FBFBFB;
+}
+
+/*
+.login-btn:hover {
+     Esto sirve, pero una vez se retire del Botón, su apariencia original regresa
+    border-radius: 4px 4px 0 0;
+}
+*/
+
+
+.dropdown-menu ul {
+    display: block;
+    flex-direction: column;
+}
+
+.dropdown-menu ul li {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f0edb7;
+}
+
+
+.dropdown-menu ul li a {
+    align-items: center;
+    color: #F09609;
+    display: block;
+}
+
+/*----------------------- Header --------------------- */
+
+.banner {
+    padding: 6px 0 4px 0;
+    display: flex;
+}
+
+.title { 
+    font-size: large;
+    align-items: center;
+    text-align: center;
+    left: 0;
+    top: 0;
+    height: 5%;
+    line-height: 2px;
+    font-size: medium;
+    margin-bottom: 5%;
+}
+
+.content {
+    display: block;
+    font-weight: 400;
+    line-height: 1.65;
+    font-size: 15px;
+    margin: 30px 5% 30px 5%;
+}
+
+.content p {
+    padding-bottom: 5%;
+}
+
+
+.doctor-img {
+    display: block;
+    width: 50%;
+    max-width: 30%;
+    height: auto;
+    margin: 5%;
+}
+
+.doctor-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.other-btn {
+    padding: 15px 20px;
+    color: #F09609;
+    background-color: #FBFBFB;
+    box-shadow: 0 0 0 2px #F09609;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.other-btn li {
+    list-style: none;
+}
+
+/*----------------------- Article --------------------- */
+
+.services {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.services .section-item {
+    position: relative;
+    background: #FBFBFB;
+    padding: 30px;
+    border-radius: 3px;
+    place-items: center;
+}
+
+.services .section-item .title {
+    margin: 5px 0 20px 0;
+}
+
+.services .section-item .text {
+    margin-top: 40px;
+    
+}
+
+.services .section-item .other-btn {
+    margin-top: 40px;
+}
+
